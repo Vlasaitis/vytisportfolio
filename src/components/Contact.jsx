@@ -1,5 +1,5 @@
 import React from 'react'
-import {contactInfo, socialMedia} from '../constants';
+import {contactInfo, socialMedia, ds} from '../constants';
 import styles, {layout} from '../style';
 
 const Contact = () => (
@@ -17,18 +17,18 @@ const Contact = () => (
                   <div className='w-[150px]'>
                   <img
                     className='mr-8 object-contain'
-                    src={info.icon}
-                    onMouseOver={(e) => (e.currentTarget.src = info.icon2)}
-                    onMouseOut={(e) => (e.currentTarget.src = info.icon)}
+                    src={`${ds}/${info.icon}`} 
+                    onMouseOver={(e) => (e.currentTarget.src = `${ds}/${info.icon2}`)}
+                    onMouseOut={(e) => (e.currentTarget.src = `${ds}/${info.icon}`)}
                   />
                   </div>
                   <h3
                     className={`${styles.heading4}`}
                     onMouseOver={(e) =>
-                      (e.target.previousElementSibling.firstElementChild.src = info.icon2)
+                      (e.target.previousElementSibling.firstElementChild.src = `${ds}/${info.icon2}`)
                     }
                     onMouseOut={(e) =>
-                      (e.target.previousElementSibling.firstElementChild.src = info.icon)
+                      (e.target.previousElementSibling.firstElementChild.src = `${ds}/${info.icon}`)
                     }
                   >
           {info.value}

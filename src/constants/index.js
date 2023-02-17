@@ -1,3 +1,5 @@
+export const ds = `${process.env.PUBLIC_URL}`;
+
 export const work = [
   {
     id: "work-1",
