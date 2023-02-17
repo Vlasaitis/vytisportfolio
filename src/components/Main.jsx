@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from '../style'
 import {mayhem2, logo} from '../../public/assets/index';
-
+import {link} from '../constants';
 import Zoom from 'react-reveal/Zoom';
 
 const Main = () => (
     <section id = "home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         <div className="flex text-[20px]  flex-col justify-between items-center w-full relative">
-          <img src={logo} alt="" className="ss:flex hidden spinningLogo  flex-col justify-between 
+          <img src={`${link}${logo}`} alt="" className="ss:flex hidden spinningLogo  flex-col justify-between 
           items-center w-1/5 "/>
             
               <h1 className="font-poppins text-gradient flex-1 
@@ -31,7 +31,7 @@ const Main = () => (
       
       
       <div className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}>
-        <img src={mayhem2} alt=""  className="rounded-full w-[50%] relative 
+        <img src={`${link}${mayhem2}`} alt=""  className="rounded-full w-[50%] relative 
         border-4 border-secondary shadow-2xl shadow-secondary"/>
         
       </div>

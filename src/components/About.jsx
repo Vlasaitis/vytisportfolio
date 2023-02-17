@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { aboutSections } from '../constants';
+import { aboutSections, link} from '../constants';
 import styles, { layout } from '../style';
 import { office } from '../../public/assets/index';
 import Flip from 'react-reveal/Flip';
@@ -18,7 +18,7 @@ const About = () => {
 
       <div className={layout.sectionInfo}>
         <h2 className={`sm:pb-8 pb-6 mt-5 ${styles.heading2}`}>About Me</h2>
-        <img src={office} className={`rounded-lg sm:w-[40%] w-[80%] border-4 border-secondary shadow-2xl shadow-secondary`} />
+        <img src={`${link}${office}`}  className={`rounded-lg sm:w-[40%] w-[80%] border-4 border-secondary shadow-2xl shadow-secondary`} />
         <div className={`info-holder flex lg:flex-row flex-col`}>
           <VisibilitySensor onChange={handleReveal} partialVisibility offset={{ top: 200, bottom: 200 }}>
             <Flip when={showAbout} left cascade>
@@ -29,7 +29,7 @@ const About = () => {
 
                   <div className={`about-container ${index === aboutSections.length - 1 ? 'mr-0' : 'mr-10'}`}>
                     <div className={`about-header flex flex-1 flex-row sm:pt-16 pt-6 sm:pb-8 pb-4`}>
-                      <img src={about.logo} />
+                      <img src={`${link}${about.logo}`} />
                       <div className={`flex flex-col`}>
                         <h2 className='font-poppins font-semibold text-[20px] text-secondary xs:leading-[76.8px] leading-[66.8px] w-full ml-3'>
                           {about.title}</h2>

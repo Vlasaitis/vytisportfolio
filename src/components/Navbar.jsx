@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { logo, close, menu } from '../../public/assets/index';
-import { navLinks } from '../constants';
+import { navLinks, link } from '../constants';
 
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className='w-full flex py-6 justify-between items-center navbar'> 
-        <img src={logo} alt="vytislogo" className="w-[75px] h-[75px]"/>
+        <img src={`${link}${logo}`} alt="vytislogo" className="w-[75px] h-[75px]"/>
 
         {/* web based navlinks, this ul disappears on small screen */}
         <ul className='list-none sm:flex hidden justify-end items-center flex-1 nav-ul'>

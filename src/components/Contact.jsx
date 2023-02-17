@@ -48,7 +48,7 @@ const Contact = () => (
           className='p-3'
           >
             <a href={media.link}>
-              <img src={media.icon}/>
+              <img src={`${link}${media.icon}`}/> 
             </a>
           </div>
         ))}
