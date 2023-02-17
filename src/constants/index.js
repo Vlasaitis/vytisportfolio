@@ -1,4 +1,5 @@
-export const ds = `${process.env.PUBLIC_URL}`;
+export const link =
+  "https://raw.githubusercontent.com/Vlasaitis/vytisportfolio/gh-pages";
 
 export const work = [
   {
