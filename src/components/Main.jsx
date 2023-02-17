@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../style'
-import {mayhem2, logo} from '../assets/index';
+import {mayhem2, logo} from '../../public/assets/index';
+
 import Zoom from 'react-reveal/Zoom';
 
 const Main = () => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { logo, close, menu } from '../assets/index';
+import { logo, close, menu } from '../../public/assets/index';
 import { navLinks } from '../constants';
 
 

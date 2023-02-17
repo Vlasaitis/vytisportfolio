@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { aboutSections } from '../constants';
 import styles, { layout } from '../style';
-import { office } from '../assets/index';
+import { office } from '../../public/assets/index';
 import Flip from 'react-reveal/Flip';
 import VisibilitySensor from 'react-visibility-sensor';
 
