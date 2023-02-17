@@ -166,7 +166,7 @@ export const contactInfo = [
   {
     id: "Email",
     icon: "/assets/email.png",
-    icon2: "/public/assets/email2.png",
+    icon2: "/assets/email2.png",
     value: "v.lasaitis@gmail.com",
   },
   {
