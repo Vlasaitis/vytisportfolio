@@ -3,7 +3,7 @@
 A simple, single-page React application to serve as my portfolio.
 
 ### Built with:
-* React
+* React / JS
 * HTML
 * CSS
 * Tailwind CSS
