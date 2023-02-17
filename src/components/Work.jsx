@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {work} from '../constants';
+import {work, link} from '../constants';
 import styles, {layout} from '../style';
 import Flip from 'react-reveal/Flip';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -30,7 +30,7 @@ const Work = () => {
                   </h3>  
                   <li>
                     <a href={work.link} className="card">
-                      <img src={work.image} className="card__image object-fit" alt="" />
+                      <img src={`${link}${work.image}`} className="card__image object-fit" alt="" />
                       <div className="card__overlay">
                         <div className="card__header">
                           <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
