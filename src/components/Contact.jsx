@@ -23,7 +23,7 @@ const Contact = () => (
                   />
                   </div>
                   <h3
-                    className={`${styles.heading4} sm:text-[32px] text-[13px] ss:leading-[100px] leading-[75px]`}
+                    className={`${styles.heading4}`}
                     onMouseOver={(e) =>
                       (e.target.previousElementSibling.firstElementChild.src = `${link}${info.icon2}`)
                     }
@@ -31,8 +31,8 @@ const Contact = () => (
                       (e.target.previousElementSibling.firstElementChild.src = `${link}${info.icon}`)
                     }
                   >
-          {info.value}
-        </h3>
+                    {info.value}
+                  </h3>
                 </div>    
             </div>
           </div>
