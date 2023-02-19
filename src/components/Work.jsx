@@ -2,15 +2,16 @@ import React, {useState} from 'react';
 import {work, link} from '../constants';
 import styles, {layout} from '../style';
 import Flip from 'react-reveal/Flip';
-import VisibilitySensor from 'react-visibility-sensor';
+import Button from './Button';
+// import VisibilitySensor from 'react-visibility-sensor';
 
 const Work = () => { 
   
-  const [showAbout, setShowAbout] = useState(false);
+  // const [showAbout, setShowAbout] = useState(false);
 
-  const handleReveal = (isVisible) => {
-    setShowAbout(isVisible);
-  };
+  // const handleReveal = (isVisible) => {
+  //   setShowAbout(isVisible);
+  // };
 
   return(
   <section id="work" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -19,8 +20,8 @@ const Work = () => {
         <h2 className={`sm:pb-12 pb-10 mt-5 ${styles.heading2}`}>My Work</h2>
           <div className={`work-holder flex lg:flex-row flex-col`}>
           <ul className="cards flex lg:flex-row flex-col">
-          <VisibilitySensor onChange={handleReveal} partialVisibility offset={{ top: 200, bottom: 200 }}>
-            <Flip when={showAbout} left cascade>
+          {/* <VisibilitySensor onChange={handleReveal} partialVisibility offset={{ top: 200, bottom: 200 }}> */}
+            <Flip left cascade>
               {work.map((work, index) => (
                 <div
                 key={work.id}
@@ -29,26 +30,31 @@ const Work = () => {
                     {work.title}
                   </h3>  
                   <li>
-                    <a href={work.link} className="card">
+                    <div className="card">
                       <img src={`${link}${work.image}`} className="card__image object-fit" alt="" />
                       <div className="card__overlay">
                         <div className="card__header">
                           <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
                           <div className="card__header-text">
-                          <h2 className='font-poppins font-semibold text-[20px] text-secondary xs:leading-[76.8px] leading-[66.8px] w-full ml-3'>
-                          More info
-                          </h2>         
+                          <div class="w-6 h-6 border-b-2 border-r-2 transform rotate-45 border-secondary"></div>
                           </div>
                         </div>
-                        <p className="card__description">{work.description}</p>
+                        <div className={`${styles.flexCenter} flex-col`}>
+                          <a href={work.link}>
+                          <div className='mb-5'>
+                          <Button text="GitHub Repository"/>   
+                          </div>              
+                        </a>
+                        <p className="card__description ss:text-[16px] text-[10px]">{work.description}</p>
+                        </div>
                       </div>
-                    </a>      
+                    </div>      
                   </li>  
                 </div>
                     
               ))}
           </Flip>
-          </VisibilitySensor>
+          {/* </VisibilitySensor> */}
           </ul>
           </div>
       </div>

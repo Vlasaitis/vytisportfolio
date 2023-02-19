@@ -108,7 +108,7 @@
   .nav-ul{
     margin:0;
     padding:0;
-    display:flex;
+    display:hidden;
   }
   
   .nav-ul .nav-li{
@@ -161,3 +161,14 @@
     transform-origin:left;
     transform:scaleX(1);
   }
+
+  @media (min-width: 768px) {
+    .sm\:flex {
+        display: flex;
+    }
+}
+
+.test-li {
+  z-index: 1; 
+}
+

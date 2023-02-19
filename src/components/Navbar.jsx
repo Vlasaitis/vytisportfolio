@@ -17,7 +17,8 @@ const Navbar = () => {
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length-1 ? 'mr-0' : 'mr-10'} text-white nav-li`}
+              className={`font-poppins font-normal cursor-pointer text-[16px] 
+              ${index === navLinks.length-1 ? 'mr-0' : 'mr-10'} text-white nav-li`}
             >
               <a href={`#${nav.id}`}>
                 {nav.title}
@@ -27,7 +28,7 @@ const Navbar = () => {
           ))}
         </ul> 
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="sm:hidden flex flex-1 justify-end items-center test-li">
             <img 
               src={toggle ? close : menu}
               alt="menu"

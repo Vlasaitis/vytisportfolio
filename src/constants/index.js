@@ -6,7 +6,7 @@ export const work = [
     id: "work-1",
     title: "Pokeblitz",
     description:
-      "Final project for Java Bootcamp. Users can battle online against other users, level up their pokemon, unlock packs and climb the ladder. Battles are fully simulated using backend simulation logic.",
+      "Java Bootcamp project. Users can battle each other, level up pokemon, unlock packs and climb the ladder. Battles are fully simulated using backend simulation logic.",
     image: "/assets/pokeblitz.png",
     link: "https://github.com/Vlasaitis/pokeblitz",
   },
@@ -16,7 +16,7 @@ export const work = [
     description:
       "This website, made to display my current and future work. Made with React as a single-page website and styled with a combination of vanilla CSS and tailwind CSS.",
     image: "/assets/portfolio.png",
-    link: "https://github.com/Vlasaitis/",
+    link: "https://github.com/Vlasaitis/vytisportfolio",
   },
 ];
 
@@ -119,11 +119,6 @@ export const aboutSections = [
       "In 2022 I decided to leave my General Manager role with the Boston Uprising in order to pursue a career as a Software Engineer. I embarked on a 3-month intensive Java bootcamp with Academic Work, after which I was hired as an IT-consultant.",
   },
 ];
-
-export const introduction = {
-  content:
-    "Hi, I'm Vytis! A little about myself: I am a freshly-baked Software Engineer/Java developer, having changed career paths in late 2022. Before embarking on my programming journey, I worked in esports for many years. I played Overwatch professionally, and also served as a Head Coach and General Manager in the Overwatch League.",
-};
 
 export const navLinks = [
   {
