@@ -23,7 +23,7 @@ const Contact = () => (
                   />
                   </div>
                   <h3
-                    className={`${styles.heading4} ss:text-[32px] text-[14px] ss:leading-[100px] leading-[75px]`}
+                    className={`${styles.heading4} sm:text-[32px] text-[13px] ss:leading-[100px] leading-[75px]`}
                     onMouseOver={(e) =>
                       (e.target.previousElementSibling.firstElementChild.src = `${link}${info.icon2}`)
                     }
