@@ -20,7 +20,6 @@ const Work = () => {
         <h2 className={`sm:pb-12 pb-10 mt-5 ${styles.heading2}`}>My Work</h2>
           <div className={`work-holder flex lg:flex-row flex-col`}>
           <ul className="cards flex lg:flex-row flex-col">
-          {/* <VisibilitySensor onChange={handleReveal} partialVisibility offset={{ top: 200, bottom: 200 }}> */}
             <Flip left cascade>
               {work.map((work, index) => (
                 <div
@@ -32,11 +31,12 @@ const Work = () => {
                   <li>
                     <div className="card">
                       <img src={`${link}${work.image}`} className="card__image object-fit" alt="" />
+                      {/* <img src={`${work.image}`} className="card__image object-fit" alt="" /> */}
                       <div className="card__overlay">
                         <div className="card__header">
                           <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
                           <div className="card__header-text">
-                          <div class="w-6 h-6 border-b-2 border-r-2 transform rotate-45 border-secondary"></div>
+                          <div className="w-6 h-6 border-b-2 border-r-2 transform rotate-45 border-secondary"></div>
                           </div>
                         </div>
                         <div className={`${styles.flexCenter} flex-col`}>
@@ -54,7 +54,6 @@ const Work = () => {
                     
               ))}
           </Flip>
-          {/* </VisibilitySensor> */}
           </ul>
           </div>
       </div>

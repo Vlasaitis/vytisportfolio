@@ -6,7 +6,7 @@ export const work = [
     id: "work-1",
     title: "Pokeblitz",
     description:
-      "Java Bootcamp project. Users can battle each other, level up pokemon, unlock packs and climb the ladder. Battles are fully simulated using backend simulation logic.",
+      "Java Bootcamp project. Users battle, level up, unlock packs, climb the ladder. Custom battle logic simulation.",
     image: "/assets/pokeblitz.png",
     link: "https://github.com/Vlasaitis/pokeblitz",
   },
@@ -14,9 +14,16 @@ export const work = [
     id: "work-2",
     title: "Portfolio",
     description:
-      "This website, made to display my current and future work. Made with React as a single-page website and styled with a combination of vanilla CSS and tailwind CSS.",
+      "This website. Made with React, JS, Vanilla CSS and tailwind CSS.",
     image: "/assets/portfolio.png",
     link: "https://github.com/Vlasaitis/vytisportfolio",
+  },
+  {
+    id: "work-3",
+    title: "Snake",
+    description: "Classic Snake game. Made with HTML Canvas, React, JS.",
+    image: "/assets/snake.png",
+    link: "https://github.com/Vlasaitis/snake",
   },
 ];
 
